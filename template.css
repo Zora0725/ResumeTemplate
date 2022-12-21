@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.main-header {
+  background: linear-gradient(0deg, #999999, #F2F2F2);
+}
+
+.main-header .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  margin: auto;
+  max-width: 1200px;
+  height: 20px;
+}
+
+.main-header .logo {
+  width: 100px;
+  position: absolute;
+}
+
+.main-header .logo img {
+  width: 100%;
+  vertical-align: middle; /* vertical-align 只適用於 in-line元素 , 收邊 */
+}
+
+.main-header .main-nav {
+  /* margin: auto; 把剩餘的空間分配給main-nav */
+  display: flex; /* 往上移動 */
+}
+
+.main-header .main-nav a {
+  text-decoration: none;
+  color: #000;
+  padding: 5px 1em;
+  position: relative;
+  transform: translatey(0px);
+  transition: 0.3s;
+}
+
+.main-header .main-nav a:nth-child(3) {
+  margin-left: 140px;
+}
+
+.main-header .main-nav a:hover {
+  transform: translatey(-10px);
+}
+
+.main-header .main-nav a:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  bottom: -5px;
+  height: 0;
+  border-bottom: 1px solid #000;
+  transition: 0.3s;
+}
+
+.main-header .main-nav a:hover:after {
+  left: 0;
+  right: 0;
+}
+
+/* section 2 */
+
+.content {
+    background-color: #F2F2F2;
+}
+
+
+/* 左上 */ 
+
+.left-box {
+    float: left;
+    margin: 10px;
+}
+
+.box,
+.box-2,
+.box-3 {
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    width: 250px;
+    border: none;
+    border-radius: 1.5em;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.08);
+}
+
+.box a,
+.box-2 a {
+    text-decoration: none;
+    color: #0085FF;
+    font-weight: 600;
+}
+
+.box p {
+    line-height: 1.2;
+    padding-bottom: 5px;
+}
+
+.box img {
+    padding: 5px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.box-2 h3 {
+    padding: 20px;
+}
+
+.box form {
+    display: flex;
+    padding-left: 40px;
+}
+
+.box input {
+    margin: 5px;
+}
+
+
+.box-2 button {
+    text-align: center;
+    color: #fff;
+    background-color: #0085FF;
+    width: 150px;
+    padding: 1em;
+    border: none;
+    border-radius: 1em;
+    margin: 30px;
+}
+
+/* 中間 */
+
+.right-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.information,
+.exp, .education,
+.skill, .condition,
+.autobiography {
+    margin: 20px;
+    border: none;
+    border-radius: 2em;
+    background-color: #fff;
+}
+
+.right-box h3,
+.right-box p {
+    padding: 10px;
+}
+
+.floatfix {
+    content: "";
+    display: block;
+    clear: both;
+  
+}
+
+/* 頁尾 */
+
+
+.main-footer {
+    margin: 10px;
+    padding: 30px 0 0 0;    
+    background: #A4A4A4;
+  }
+  
+  .main-footer .container {
+    display: flex;
+    margin: auto;
+  }
+  
+  .footer-item {
+    width: 0;
+    flex-grow: 1;
+    margin: 0 20px;
+  }
+  
+  .footer-item nav a:hover {
+    color: #fa0;
+    width: 100%;
+    left: 0;
+  }
+  
+  .conpyright {
+    text-align: center;
+    margin: 150p 0 0x;
+    padding: 10px 0px;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .footer-item nav {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer-item h4 {
+    font-size: 24px;
+    color: #000;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 0.5em;
+    padding-bottom: 0.5em;
+  }
+  
+  .footer-item nav a {
+    color: #000;
+    line-height: 1.4;
+    text-decoration: none;
+    padding: 5px 0;
+    position: relative;
+  }
+  
+  .footer-item nav .hover-underline::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+  }
+  
+  .footer-item nav .hover-underline:hover::after {
+    transform: scaleX(0.5);
+    transform-origin: bottom left;
+  }
+  
+  
+  .footer-subs {
+    display: flex;
+    flex-direction: column;
+  }
+  
